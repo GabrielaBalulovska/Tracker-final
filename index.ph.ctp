@@ -10,8 +10,9 @@
 
   <nav>
 
-    <a href="#one">One</a>
-    <a href="#two">Two</a>
-    <a href="#three">three</a>
+  <a href="#one">How it Works</a>
+    <a href="#two">About Us</a>
+    <a href="#three">Testimonials</a>
+    <a href="#three">Contact us</a>
     
  
