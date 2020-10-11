@@ -3,35 +3,35 @@
 <head>
 <link rel= 'stylesheet' href='./css/style.css'/>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
 
 
 
   <nav>
-
-    <a href="#Tracker">Tracker</a>
-    <a href="#How it works">How it works</a>
-    <a href="#About us">About us</a>
-    <a href="#Testimonials">Testimonials</a>   
-    <a href="#Product">Product</a>   
-    <a href="Contactus.html">Contact us</a>    
-   
+    <img id="logo" href="#tracker" src="img/Logo.png"> 
+    <a href="#Aboutus">about us</a>
+    <a href="#Howitworks">how it works</a>
+    <a href="#Testimonials">testimonials</a>   
+    <a href="#Product">product</a>   
+    <a href="Contactus.html">contact us</a>    
+   <a class="cart" href="#cart"><i class="fas fa-shopping-cart"></i>cart</a>
   </nav>
-
 
   <section id="Tracker">
     <section id ="one">
-
-    <h1>Tracker.</h1>
-    <h2>The future of GPS tracking, right in your pocket.</h2>
-    <h3>Learn More ></h3>
-    <h3>Customer Reviews ></h3>
-<button> Shop Now</button>
+      <img class="tracker"src="img/tracker1.jpg">
+    <img src="img/Logo1.png">
+    <h2>The future of GPS tracking,</h2><h4> right in your pocket.</h4>
+    <h3><a class="links"href="Howitworks">Learn More ></a></h3>
+    <h3><a class="links" href="Testimonials">Customer Reviews ></a></h3>
+    <button class="button"><span>Shop Now </span></button>
   </section>
 
 
-  <section id="How it works">
+  <section id="Aboutus">
     <section id ="two">
 
     <h1>About our company</h1>
@@ -40,7 +40,7 @@
 
   </section>
 
-  <section id="About us">
+  <section id="Howitworks">
     <section id ="one">
 
     <h1>Made by people, for people</h1>
@@ -69,7 +69,38 @@
             <h1><strong>Convinced?</strong></h1>
             <p> Become one of over 100,000 in joining the future of GPS tracking today.
             </p>
-            <button class="btn-2"> View product</button>
+            <button class="button"><span>View Product </span></button>
 
 </body>
 </html>
+<script>
+
+
+
+  //~~~~~~~~~~~~~~~~~~~~~~~~~~~SMOOTH SCROLLING ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  $(document).ready(function(){
+	// Add smooth scrolling to all links
+	$("a").on('click', function(event) {
+  
+	  // Make sure this.hash has a value before overriding default behavior
+	  if (this.hash !== "") {
+		// Prevent default anchor click behavior
+		event.preventDefault();
+  
+		// Store hash
+		var hash = this.hash;
+  
+		// Using jQuery's animate() method to add smooth page scroll
+		// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		$('html, body').animate({
+		  scrollTop: $(hash).offset().top
+		}, 600, function(){
+	 
+		  // Add hash (#) to URL when done scrolling (default click behavior)
+		  window.location.hash = hash;
+		});
+	  } // End if
+	});
+  });
+
+</script>
