@@ -10,6 +10,14 @@ body{
 }
 
 
+/*~~~~~~~~~~~~~~~ NAV CODE START~~~~~~~~~~~~~~~~~~~~~~~*/
+#logo {
+	float: left;
+	margin: 20px;
+	width: 200px;
+	height: auto;
+  }
+
 nav{
 	font-family: "Roboto";
 	font-size: 24px;
@@ -21,10 +29,10 @@ nav{
 	position: fixed;
 	opacity: 95%;
 	margin-top: -8px;
+	line-height: 70px;
 }
 
 nav a, nav h3{
-  
 	margin: 0px;
 	line-height: 60px;
 	margin-left: 1em;
@@ -32,6 +40,39 @@ nav a, nav h3{
 	text-decoration: none;
 	color:black;
 }
+.menu a{
+	clear:right;
+	line-height: 70px;
+}
+
+label{
+	margin: 0 40px 0 0;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float: right;
+}
+
+#toggle{
+	display: none;
+}
+#app{
+	padding-bottom: 150px;
+}
+a {
+ color: black;
+}
+a:hover {
+	color: #99D9DD;
+	border-bottom: 2px solid #99D9DD;
+   }
+
+a:visited {
+text-decoration: none;
+   }
+
+   /*~~~~~~~~~~~~~~~ NAV CODE END~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
 
@@ -67,7 +108,7 @@ nav a, nav h3{
     font-size: 26px;
     
     font-weight: 600;
-    top: 530px; 
+    top: 360px; 
     left: 620px; 
     color: #FFFFFF;
 } 
@@ -84,46 +125,91 @@ nav a, nav h3{
  
     
     font-size: 18px;
-    top: 610px; 
+    top: 450px; 
     left: 510px; 
     width: 448px;
     color: black;
     text-align: center;
 } 
 
+.button2{
+  font-family: 'Poppins';
+  font-size: 22px;
+  color: white;
+  background-color: #99D9DD;
+  position: absolute;
+  padding: 5px 80px;
+  border-style: none;
+  border-radius: 18px;
+  -moz-box-shadow: 0px 3px 5px rgb(196, 196, 196);
+  -webkit-box-shadow: 0px 3px 5px rgb(196, 196, 196);
+  box-shadow: 0px 3px 5px rgb(196, 196, 196);
+  margin-left: 1000px;
+  margin-top: 90px;
+  width: 200px;
+  text-align: center;
+}
 
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-  }
-  
-  @media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-  }
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-  }
+
+
+  /* COPY AND PASTE THIS TO GET NAV RESPONSIVE*/
+@media only screen and (min-width: 600px) and (max-width: 1055px){
+	label{
+		display: block;
+		cursor: pointer;
+		color:#249BA3;
+	}
+	.menu{
+		text-align: center;
+		width: 100%;
+		display: none;
+		background-color:white;
+	}
+	.menu a{
+		display: block;
+		border-bottom: 1px solid black;
+		margin: 0%;
+		color: black;
+	}
+
+	#toggle:checked + .menu{
+		display: block;
+		color: #f1f1f1;
+	}
+	#logo{
+		display: none;
+	}
+} 
+
+@media only screen and (max-width: 600px){
+    
+	#container{
+		display: none;
+	}
+	label{
+		display: block;
+		cursor: pointer;
+		color:#249BA3;
+	}
+	.menu{
+		text-align: center;
+		width: 100%;
+		display: none;
+		background-color:white;
+	}
+	.menu a{
+		display: block;
+		border-bottom: 1px solid black;
+		margin: 0%;
+		color: black;
+	}
+
+	#toggle:checked + .menu{
+		display: block;
+		color: #f1f1f1;
+	}
+	#logo{
+		display: none;
+	}
+
+} 

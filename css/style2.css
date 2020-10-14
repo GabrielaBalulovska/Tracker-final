@@ -9,6 +9,14 @@ body{
 }
 
 
+/*~~~~~~~~~~~~~~~ NAV CODE START~~~~~~~~~~~~~~~~~~~~~~~*/
+#logo {
+	float: left;
+	margin: 20px;
+	width: 200px;
+	height: auto;
+  }
+
 nav{
 	font-family: "Roboto";
 	font-size: 24px;
@@ -20,6 +28,7 @@ nav{
 	position: fixed;
 	opacity: 95%;
 	margin-top: -8px;
+	line-height: 20px;
 }
 
 nav a, nav h3{
@@ -30,6 +39,40 @@ nav a, nav h3{
 	text-decoration: none;
 	color:black;
 }
+.menu a{
+	clear:right;
+	line-height: 70px;
+}
+
+.label{
+	margin: 0 40px 0 0;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float: right;
+}
+
+#toggle{
+  display: none;
+
+}
+#app{
+	padding-bottom: 150px;
+}
+a {
+ color: black;
+}
+a:hover {
+	color: #99D9DD;
+	border-bottom: 2px solid #99D9DD;
+   }
+
+a:visited {
+text-decoration: none;
+   }
+
+   /*~~~~~~~~~~~~~~~ NAV CODE END~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
 
@@ -41,12 +84,7 @@ h2{
 }
 
 
-#logo {
-	float: left;
-	margin: 10px;
-	width: 200px;
-	height: auto;
-  }
+
 
 * {
   box-sizing: border-box;
@@ -172,4 +210,66 @@ span.price {
   }
   .col-25 {
     margin-bottom: 20px;
-  }
+  } }
+
+  /* COPY AND PASTE THIS TO GET NAV RESPONSIVE*/
+@media only screen and (min-width: 600px) and (max-width: 1055px){
+	label{
+		display: block;
+		cursor: pointer;
+		color:#249BA3;
+	}
+	.menu{
+		text-align: center;
+		width: 100%;
+		display: none;
+		background-color:white;
+	}
+	.menu a{
+		display: block;
+		border-bottom: 1px solid black;
+		margin: 0%;
+		color: black;
+	}
+
+	#toggle:checked + .menu{
+		display: block;
+		color: #f1f1f1;
+	}
+	#logo{
+		display: none;
+	}
+} 
+
+@media only screen and (max-width: 600px){
+    
+	#container{
+		display: none;
+	}
+	label{
+		display: block;
+		cursor: pointer;
+		color:#249BA3;
+	}
+	.menu{
+		text-align: center;
+		width: 100%;
+		display: none;
+		background-color:white;
+	}
+	.menu a{
+		display: block;
+		border-bottom: 1px solid black;
+		margin: 0%;
+		color: black;
+	}
+
+	#toggle:checked + .menu{
+		display: block;
+		color: #f1f1f1;
+	}
+	#logo{
+		display: none;
+	}
+
+} 
