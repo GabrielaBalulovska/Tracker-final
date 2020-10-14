@@ -6,24 +6,19 @@ body{
     background-color: #f5f5f5;
 }
 
-
 #three {
-
 	text-align: center;
 	margin: 50px;	
-
 }
 
+/*~~~~~~~~~~~~~~~ NAV CODE START~~~~~~~~~~~~~~~~~~~~~~~*/
 #logo {
 	float: left;
-	margin: 10px;
+	margin: 20px;
 	width: 200px;
 	height: auto;
   }
-  .cart{
-	  text-align: right!important;
 
-  }
 nav{
 	font-family: "Roboto";
 	font-size: 24px;
@@ -35,6 +30,7 @@ nav{
 	position: fixed;
 	opacity: 95%;
 	margin-top: -8px;
+	line-height: 70px;
 }
 
 nav a, nav h3{
@@ -45,7 +41,26 @@ nav a, nav h3{
 	text-decoration: none;
 	color:black;
 }
+.menu a{
+	clear:right;
+	line-height: 70px;
+}
 
+label{
+	margin: 0 40px 0 0;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float: right;
+}
+
+#toggle{
+	display: none;
+}
+#app{
+	padding-bottom: 150px;
+}
 a {
  color: black;
 }
@@ -57,6 +72,8 @@ a:hover {
 a:visited {
 text-decoration: none;
    }
+
+   /*~~~~~~~~~~~~~~~ NAV CODE END~~~~~~~~~~~~~~~~~~~~~~~*/
 
    .links{
 	   text-decoration: none;
@@ -108,7 +125,8 @@ p{
 	font-size: 18px;
 }
 
-button{
+
+.button{
 	font-size: 18px;
 	color: white;
 	background-color: #249BA3;
@@ -145,11 +163,6 @@ button{
 	right: 0;
   }
 
-.aboutimg{
-	width:500px;
-	height: auto;
-}
-
 .tracker{
 	  width: 600px;
 	  height: auto;
@@ -158,15 +171,22 @@ button{
   }
 
   .content-container{
-    display: grid;
-    grid-template-areas: 'left-content right-content';
     width: 80%;
-	margin: auto;
-	padding-top: 100px;
-	align-items: center;
-	grid-gap: 150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-column-gap: 50px; /*the gap between the columns */
+    grid-row-gap:200px; /*the gap between the rows */
+    grid-auto-rows: 700px; /* the length of the rows */
+    align-items: center;
 }
+.review{
+	color:#249BA3;
+}
+#container{
+	background-color: #99D9DD;
 
+}
 .featured-article, .another-article{
     margin-top: 2%;
     margin-bottom: 2%;
@@ -177,25 +197,28 @@ button{
 }
 
 .another-article{
-    grid-area: another-article;
+    grid-area: 'another-article';
 	padding-bottom: 200px;
 	padding-top: 200px;
 	margin: auto;
 }
 
 .left-content{
-
 	text-align: left;
 	padding-left: 100px;
+	padding-bottom: 100px;
+	grid-area:'featured-article' ;
+
 }
 
 .right-content{
 	text-align: right;
 	padding-right: 100px;
+	padding-bottom: 100px;
 }
 
 .right-article{
-	grid-area: right-article;
+	grid-area: 'right-article';
 	padding: 50px;
 }
 
@@ -208,12 +231,99 @@ hr{
 }
 
 #container {
-    background-image:url(img3bg.png);
     background-position:center;
-    width:100%;
+    width:80%;
 	height:400px;
+
 	position:absolute;
     z-index:-1;
-	align-content: center;
-	margin-top: 270px;;
+	margin-top: 150px;
 }
+img{
+	width:100%;
+	max-width:100%;
+    display:block;
+    height: auto;
+
+}
+.block{
+	color: white;
+}
+
+@media only screen and (min-width: 900px){
+
+	.all-cont{
+		align-items: center;
+		
+	}
+
+	#Home{
+        display: grid;
+        grid-template-areas: 
+        'featured-article right-article'
+        ;
+        gap: 2vw;
+        margin: 2vw;
+    }
+} 
+/* COPY AND PASTE THIS TO GET NAV RESPONSIVE*/
+@media only screen and (min-width: 600px) and (max-width: 1055px){
+	label{
+		display: block;
+		cursor: pointer;
+		color:#249BA3;
+	}
+	.menu{
+		text-align: center;
+		width: 100%;
+		display: none;
+		background-color:white;
+	}
+	.menu a{
+		display: block;
+		border-bottom: 1px solid black;
+		margin: 0%;
+		color: black;
+	}
+
+	#toggle:checked + .menu{
+		display: block;
+		color: #f1f1f1;
+	}
+	#logo{
+		display: none;
+	}
+} 
+
+@media only screen and (max-width: 600px){
+    
+	#container{
+		display: none;
+	}
+	label{
+		display: block;
+		cursor: pointer;
+		color:#249BA3;
+	}
+	.menu{
+		text-align: center;
+		width: 100%;
+		display: none;
+		background-color:white;
+	}
+	.menu a{
+		display: block;
+		border-bottom: 1px solid black;
+		margin: 0%;
+		color: black;
+	}
+
+	#toggle:checked + .menu{
+		display: block;
+		color: #f1f1f1;
+	}
+	#logo{
+		display: none;
+	}
+
+} 
