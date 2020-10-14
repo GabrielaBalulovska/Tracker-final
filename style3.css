@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+
+
+  
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+#logo{
+  float: left;
+  margin: 10px;
+  width: 200px;
+  height: auto;
+}
+
+nav{
+	font-family: "Roboto";
+	font-size: 24px;
+	width: 100%;
+	height: 70px;
+	background-color: #f1f1f1;
+	color:black;
+	text-align:left;
+	position: fixed;
+	opacity: 95%;
+	margin-top: -8px;
+}
+
+nav a, nav h3{
+  
+	margin: 0px;
+	line-height: 60px;
+	margin-left: 1em;
+	margin-right: 1em;
+	text-decoration: none;
+	color:black;
+}
+
+
+
+  
+  .firstcard{
+    
+    padding: 10px; 
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 250px;
+    margin-right: 250px;
+    width: 800px;
+    height: 550px;
+    text-align: center;
+}
+
+#img{
+    padding: 10px; 
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 420px;
+    width: 586px;
+    height: 461px;
+
+   
+}
+
+.button2{
+  font-family: 'Poppins';
+  font-size: 20px;
+  color: white;
+  background-color: #99D9DD;
+  position: absolute;
+  padding: 10px 90px;
+  border-style: none;
+  border-radius: 18px;
+  -moz-box-shadow: 0px 3px 5px rgb(196, 196, 196);
+  -webkit-box-shadow: 0px 3px 5px rgb(196, 196, 196);
+  box-shadow: 0px 3px 5px rgb(196, 196, 196);
+  margin-left: 760px;
+  margin-top: 50px;
+  width: 150px;
+  left: 290px;
+  align-items: center;
+}
+
+.first-txt { 
+    position: absolute; 
+    font-family: "Poppins";
+    font-size: 26px;
+    
+    font-weight: 600;
+    top: 530px; 
+    left: 620px; 
+    color: #FFFFFF;
+} 
+
+.second-txt { 
+    position: absolute;
+
+
+    font-family: "Roboto" ;
+    font-style: "thin 100";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+ 
+    
+    font-size: 18px;
+    top: 610px; 
+    left: 510px; 
+    width: 448px;
+    color: black;
+    text-align: center;
+} 
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
