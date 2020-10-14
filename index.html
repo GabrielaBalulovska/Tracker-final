@@ -1,28 +1,32 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <title>tracker.</title>
 <link rel= 'stylesheet' href='./css/style.css'/>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--ADD THIS INTO YOUR HEADER-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 
 
   <nav>
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle"/>
+    <div class="menu">
     <a href="#tracker"><img id="logo"  src="img/Logo.png"> </a>
-    <a href="#Aboutus">about us</a>
-    <a href="#Howitworks">how it works</a>
-    <a href="#app">connectivity</a>
-    <a href="#Testimonials">testimonials</a> 
-    <a href="#mission">mission</a>     
-    <a href="#Product">product</a>   
-    <a href="Contactus.html">contact us</a>    
-    <a class="cart" href="payment.html"><i class="fas fa-shopping-cart"></i>cart</a>
+    <a href="#Aboutus">About us</a>
+    <a href="#Howitworks">How it works</a>
+    <a href="#Testimonials">Testimonials</a>   
+    <a href="Singleproduct.html">Product</a> 
+    <a class="cart" href="payment.html"><i class="fa fa-shopping-cart"></i>Cart</a>
+  </div>
   </nav>
 
 <!--Landing Page Section-->
+<div class="all-cont">
   <section id="tracker" class="content-container">
     <div class="left-content">
         <div class="featured-article">
@@ -43,7 +47,7 @@
                 <h2>The future of GPS tracking,</h2><h4> right in your pocket.</h4>
                   <h3><a class="links"href="Howitworks">Learn More ></a></h3>
                   <h3><a class="links" href="Testimonials">Customer Reviews ></a></h3>
-                <button class="button"><span>Shop Now </span></button>
+                  <a href="Singleproduct.html" class="button"><span>Shop Now </span></a>
                 </div>
 
               </div>
@@ -57,8 +61,14 @@
         <div  class="featured-article">
           
             <h1>About our company</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            </p>
+            <p>Welcome to tracker, your number one source for GPS trackers. We're dedicated to providing you the very best of trackers, with an emphasis on efficiency, sustainablity, style.
+            </p> 
+              <p>Founded in 2020 by our small team of 5, tracker has come a long way from its beginnings in Victoria University. When we first started out, our passion for eco-friendly products drove us to start our own business.
+                We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.
+          </p>
+          <p>  Sincerely,
+              
+            The tracker team</p>
         </div>
             <br>
             <br>
@@ -89,7 +99,8 @@
               <div class="right-content">
                 <div class="right-article">
                   <h1>Made by people, for people</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                  <p>We made the the tracker to giev you the best of what we as consumers would want, eco friendly, productive and stylist products that help you in your daily lives. The tracker is made with
+                    your needs, and the planets needs in mind. 
                   </p>
                 </div>
               </div>          
@@ -109,7 +120,7 @@
             <br>
         </div>
         <div id="container">
-          <img src="img/img3bg.png">
+         
           </div>
    
 
@@ -138,7 +149,10 @@
                   <hr>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                   </p>
-              
+                  <img src="img/avatars.png">
+                  <p>John Doe</p>
+                  <p class="review">Customer Review</p>
+                  <img src="img/stars.png">     
                 </div>
               </div>          
   </section>
@@ -149,7 +163,7 @@
     <div class="left-content">
         <div class="featured-article">
           <h1>Our Mission Is To Go World Wide</h1> 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          <p> But not through our oceans, tracker is made of organic, sustainable, biodegradable bamboo and plant-based recycled plastics. Our aim is to go world wide for the right reasons and to help pave the way for more sustainable products. </p>
          
         </div>
             <br>
@@ -173,12 +187,11 @@
           
           
             <section id ="three">
-        
             <h1><strong>Convinced?</strong></h1>
             <p> Become one of over 100,000 in joining the future of GPS tracking today.
             </p>
-            <button class="button"><span>View Product </span></button>
-
+            <a href="Singleproduct.html" class="button"><span>View Product </span></a>
+</div>
 </body>
 </html>
 <script>
