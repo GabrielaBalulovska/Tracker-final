@@ -325,5 +325,107 @@ img{
 	#logo{
 		display: none;
 	}
-
 } 
+
+
+  /*~~~~~~~~~~~~~~~ footer start D~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+  .row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	margin: 0 -16px;
+  }
+
+
+  .footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 600px;
+    background-color:#A3A3A3;
+    color: white;
+    text-align: center;
+ }
+
+
+ #logo2 {
+	 position: relative;
+	float: center;
+	margin: 20px;
+	width: 200px;
+	height: auto;
+	align-items: center;
+ }
+
+ .button5{
+	position: relative;
+	font-size: 14px;
+	color: white;
+	background-color: #99D9DD;
+	padding: 10px 50px;
+	border-radius: 50px;
+	border-style: none ;
+	-moz-box-shadow:    0px 3px 5px  rgb(0, 0, 0);
+	-webkit-box-shadow: 0px 3px 5px  rgb(0, 0, 0);
+	box-shadow:         0px 3px 5px  rgb(0, 0, 0);
+	bottom: 0px;
+	left: 0px;
+	text-align: center;
+}
+
+
+.button5 span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+color: white;
+}
+
+.button5 span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+color: white;
+}
+
+.button5:hover span {
+padding-right: 15px;
+}
+
+.button5:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+ .container {
+	background-color: #f2f2f2;
+	padding: 5px 20px 15px 20px;
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+  }
+  
+  input[type=text] {
+	width: 100px;
+	margin-bottom: 20px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+  }
+  
+  
+  .icon-container {
+	margin-bottom: 20px;
+	padding: 7px 0;
+	font-size: 24px;
+  }
+
+ /*~~~~~~~~~~~~~~~ footer end D~~~~~~~~~~~~~~~~~~~~~~~*/
+

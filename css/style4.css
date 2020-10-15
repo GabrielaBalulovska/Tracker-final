@@ -227,7 +227,6 @@ border: 3px solid #99D9DD;
 	font-size: 24px;
 	line-height: 25px;
 	text-align: right;
-}
 } 
 /* COPY AND PASTE THIS TO GET NAV RESPONSIVE*/
 @media only screen and (min-width: 600px) and (max-width: 1055px){
@@ -290,3 +289,5 @@ border: 3px solid #99D9DD;
 	}
 
 } 
+
+
